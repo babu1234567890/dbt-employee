@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: Employee
+    description: a clone of the Employee Database
+    database: demo
+    schema: public
+    tables:
+      - name: Employee
+        description: raw Employee table
+        columns:
+         - name: salary
+           description: salary of Employee
+           tests:
+             - not_null
+             
+     
